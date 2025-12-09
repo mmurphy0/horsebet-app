@@ -1,8 +1,7 @@
-import random
-import sys
+import random, sys
 import tkinter as tk
-from tkinter import Toplevel
-from tkinter import messagebox
+from tkinter import Toplevel, messagebox
+from datetime import datetime
 
 logins = {
     'admin' : 'admin',
@@ -41,13 +40,18 @@ def horserace():
         amount = win
         messagebox.showinfo('Result', f'Congratulations {win_horse} won the race')
         messagebox.showinfo('Winning',f'Your winnings of {amount} will be withdrawn')
-        home.destroy
-        homepage()
     else:
         amount = lose
         messagebox.showinfo('Result',f'Unfortunately {win_horse} won the race')
-        home.destroy
-        homepage()
+
+    with open('scorelog.txt','a') as file:
+        time = datetime.now()
+        time = str(time)
+        winnings = str(amount)
+        file.write('Horse: ' + horse + '\n' + 'Winnings £' + winnings + '\n' + time + '\n' + '----------' +'\n')
+
+    home.destroy()
+    homepage()
         
 def checkhorse():
     global horse
@@ -192,6 +196,7 @@ def checkage():
 def logout():
     messagebox.showinfo('Confirmation','Successfully logged out')
     login()
+    home.destroy()
 
 def registered():
     usr = usr_entry.get()
@@ -460,6 +465,9 @@ def homepage():
         columnspan=2,
         pady=0
     )
+
+    loginpage.destroy()
+    register_acc.destroy()
 
 root = tk.Tk()
 root.title('Verify Age')
