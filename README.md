@@ -20,6 +20,6 @@ A Python Tkinter App which lets users put on bets on virtual horses with a virtu
 
 -> user is directed back to home page and results are saved to scorelog.txt
 
-# Future Updates
+## Future Updates
 -> Update GUI
 -> Add more horses
