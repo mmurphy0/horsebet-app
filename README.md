@@ -1,5 +1,7 @@
 # horsebet
 
+## The results in scorelog.txt are not real winnings but are from testing the program to show how it works
+
 ## Description
 A Python Tkinter App which lets users put on bets on virtual horses with a virtual currency. These horses have odds and a random horse is selected each race
 
