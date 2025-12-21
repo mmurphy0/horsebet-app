@@ -70,10 +70,10 @@ def checkhorse():
 def choosehorse():
     global horsewin, horsewin_entry
     horsewin = Toplevel()
-    horsewin.title('Choose Your Horse')
-    horsewin.geometry('300x100')
-    horsewin.minsize(300,100)
-    horsewin.maxsize(300,100)
+    horsewin.title('horsebet')
+    horsewin.geometry('280x80')
+    horsewin.minsize(280,80)
+    horsewin.maxsize(280,80)
 
     depositwin.destroy()
 
@@ -90,7 +90,7 @@ def choosehorse():
     horsewin_button = tk.Button(
         horsewin,
         text='Submit',
-        font=('Arial',15),
+        font=('Arial'),
         command=checkhorse
     )
     horsewin_button.pack()
@@ -115,10 +115,10 @@ def depositfunc():
     global deposit_entry, depositwin
 
     depositwin = Toplevel()
-    depositwin.title('Enter Deposit')
-    depositwin.geometry('220x140')
-    depositwin.minsize(220,130)
-    depositwin.maxsize(220,130)
+    depositwin.title('horsebet')
+    depositwin.geometry('210x110')
+    depositwin.minsize(210,110)
+    depositwin.maxsize(210,110)
 
     deposit_title = tk.Label(
         depositwin,
@@ -150,7 +150,7 @@ def depositfunc():
     deposit_button = tk.Button(
         depositwin,
         text='Add To Balance',
-        font=('Arial',15),
+        font=('Arial'),
         width=20,
         command = checkdeposit
     )
@@ -163,7 +163,7 @@ def depositfunc():
     deposit_cancel = tk.Button(
         depositwin,
         text='Back',
-        font=('Arial',15),
+        font=('Arial'),
         width=20,
         command=depositwin.destroy
     )
@@ -209,7 +209,7 @@ def registered():
 def register():
     global register_acc, usr_entry, pwd_entry
     register_acc = Toplevel()
-    register_acc.title('Register an account')
+    register_acc.title('horsebet')
     register_acc.geometry('280x118')
     register_acc.minsize(280,118)
     register_acc.maxsize(280,118)
@@ -250,7 +250,7 @@ def register():
         register_acc,
         text='Register',
         width=20,
-        font=('Arial',15),
+        font=('Arial'),
         command=registered
     )
     register_button.grid(
@@ -263,7 +263,7 @@ def register():
         register_acc,
         text='Exit',
         width=20,
-        font=('Arial',15),
+        font=('Arial'),
         command=sys.exit
     )
     exit_button.grid(
@@ -275,7 +275,7 @@ def register():
 def login():
     global l3,l5,loginpage
     loginpage = Toplevel()
-    loginpage.title('Login')
+    loginpage.title('horsebet')
     loginpage.geometry('280x180')
     loginpage.minsize(280,180)
     loginpage.maxsize(280,180)
@@ -372,13 +372,13 @@ def homepage():
     home = Toplevel()
     home.update_idletasks()
     home.geometry('340x200')
-    home.title('Home')
+    home.title('horsebet')
     home.minsize(340,200)
     home.maxsize(340,200)
     
     home_title = tk.Label(
         home,
-        text='horsebet.com',
+        text='horsebet',
         font=('Arial',20, 'bold'),
         width=20,
         height=2,
@@ -470,10 +470,10 @@ def homepage():
     register_acc.destroy()
 
 root = tk.Tk()
-root.title('Verify Age')
-root.geometry('230x100')
-root.minsize(230,100)
-root.maxsize(230,100)
+root.title('horsebet')
+root.geometry('230x90')
+root.minsize(230,90)
+root.maxsize(230,90)
 
 age_title = tk.Label(
     root,
