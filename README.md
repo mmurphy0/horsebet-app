@@ -2,8 +2,6 @@
 
 ## A Python Tkinter App which lets users put on bets on virtual horses with a virtual currency. These horses have odds and a random horse is selected each race
 
-#
-
 -> User enters their age. They cannot enter if their age is under 18
 
 -> User is prompted to login or register an account
