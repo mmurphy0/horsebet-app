@@ -22,11 +22,14 @@ A Python Tkinter App which lets users put on bets on virtual horses with a virtu
 
 ## Installation
 git clone <repo>
+
 pip install tk
+
 python horsebet.py
 
 ## Tech Stack
 -> Python
+
 -> Tkinter
 
 ## Future Updates
