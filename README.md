@@ -39,4 +39,5 @@ python3 horsebet.py
 
 ## Future Updates
 -> Update GUI
+
 -> Add more horses
