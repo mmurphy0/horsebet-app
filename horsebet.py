@@ -71,7 +71,7 @@ def choosehorse():
     global horsewin, horsewin_entry
     horsewin = Toplevel()
     horsewin.title('horsebet')
-    horsewin.geometry('280x80')
+    horsewin.geometry('280x80+0+0')
     horsewin.resizable(False,False)
 
     depositwin.destroy()
@@ -115,7 +115,7 @@ def depositfunc():
 
     depositwin = Toplevel()
     depositwin.title('horsebet')
-    depositwin.geometry('210x110')
+    depositwin.geometry('210x110+0+0')
     depositwin.resizable(False,False)
 
     deposit_title = tk.Label(
@@ -208,7 +208,7 @@ def register():
     global register_acc, usr_entry, pwd_entry
     register_acc = Toplevel()
     register_acc.title('horsebet')
-    register_acc.geometry('280x118')
+    register_acc.geometry('280x118+0+0')
     register_acc.resizable(False,False)
     
     usr_label = tk.Label(
@@ -273,7 +273,7 @@ def login():
     global l3,l5,loginpage
     loginpage = Toplevel()
     loginpage.title('horsebet')
-    loginpage.geometry('280x180')
+    loginpage.geometry('280x180+0+0')
     loginpage.resizable(False,False)
 
     l1 = tk.Label(
@@ -367,7 +367,7 @@ def homepage():
 
     home = Toplevel()
     home.update_idletasks()
-    home.geometry('340x200')
+    home.geometry('340x200+0+0')
     home.title('horsebet')
     home.resizable(False,False)
     
@@ -466,7 +466,7 @@ def homepage():
 
 root = tk.Tk()
 root.title('horsebet')
-root.geometry('230x90')
+root.geometry('230x90+0+0')
 root.resizable(False,False)
 
 age_title = tk.Label(
