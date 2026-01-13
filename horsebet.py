@@ -1,7 +1,8 @@
-import random, sys
+import random, sys, time
 import tkinter as tk
 from tkinter import Toplevel, messagebox
 from datetime import datetime
+from time import strftime
 
 logins = {
     'admin' : 'admin',
@@ -360,6 +361,11 @@ def login():
     )
 
 def homepage():
+    def time():
+        current_time = strftime("%H:%M:%S")
+        time_label.config(text=current_time)
+        time_label.after(1000, time)
+
     messagebox.showinfo('Error','Your balance will be withdrawn after each race')    
     
     global amount, home
@@ -435,6 +441,17 @@ def homepage():
         column=1
     )
 
+    time_label = tk.Label(
+        home,
+        font=('Arial',20)
+    )
+    time_label.grid(
+        row=3,
+        column=3,
+        columnspan=2,
+        pady=0
+    )
+
     bet_button = tk.Button(
         home,
         text='Place Bet',
@@ -460,6 +477,8 @@ def homepage():
         columnspan=2,
         pady=0
     )
+
+    time()
 
     loginpage.destroy()
     register_acc.destroy()
